@@ -1,0 +1,29 @@
+
+<%- include('includes/head') %>
+
+
+    <section class="container">
+      <h1>
+        Olá mundo
+
+        <!-- <%# if(typeof titulo !== 'undefined') { %> <%#= titulo %> <%#} else { %>
+          'Não veio nada' <%# } %> <%#- titulo %> <%# numeros.forEach(num => { %> <%#=
+          num %>
+  
+          <br />
+  
+          <%# }); %> -->
+      </h1>
+
+      <div class="resultado"></div>
+
+      <form action="/" method="post">
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <label for="">Cliente</label>
+        <input type="text" name="cliente" />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+
+    <%- include('includes/footer') %>
