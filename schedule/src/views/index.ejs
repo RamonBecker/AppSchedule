@@ -1,29 +1,52 @@
 
-<%- include('includes/head') %>
+<%- include('includes/head.ejs')  %>
+<%- include('includes/nav.ejs')  %>
 
 
-    <section class="container">
-      <h1>
-        Olá mundo
-
-        <!-- <%# if(typeof titulo !== 'undefined') { %> <%#= titulo %> <%#} else { %>
-          'Não veio nada' <%# } %> <%#- titulo %> <%# numeros.forEach(num => { %> <%#=
-          num %>
-  
-          <br />
-  
-          <%# }); %> -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8 my-3">
+      <h1 class="text-center">
+        Agenda
       </h1>
 
-      <div class="resultado"></div>
+      <p class="text-center lead">Seus contatos estão abaixo</p>
+      
+      <div class="row">
+        <div class="col my-3">
+          <div class="alert alert-danger">Um erro qualquer</div>
+        </div>
+      </div>
 
-      <form action="/" method="post">
-        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-        <label for="">Cliente</label>
-        <input type="text" name="cliente" />
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+      <div class="responsive-table">
+        <table class="table my-3">
+            <tr>
+              <td>Ramon</td>
+              <td>Marcos</td>
+              <td>12313123</td>
+              <td>ramon@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Ramon</td>
+              <td>Marcos</td>
+              <td>12313123</td>
+              <td>ramon@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Ramon</td>
+              <td>Marcos</td>
+              <td>12313123</td>
+              <td>ramon@gmail.com</td>
+            </tr>
+        </table>
+      </div>
+
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+</div>
 
 
-    <%- include('includes/footer') %>
+<%- include('includes/footer.ejs')  %>
+
