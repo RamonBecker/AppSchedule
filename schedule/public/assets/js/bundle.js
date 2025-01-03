@@ -90,13 +90,10 @@
 /*!***************************!*\
   !*** ./frontend/index.js ***!
   \***************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module './assets/css/style.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-
+// import "./assets/css/style.css";
 
 /***/ })
 
